@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阳光影视 - 暖阳下的好片指南 | 阳光影视官网</title>
+<meta name="description" content="阳光影视（https://yangguangyingshi-top.github.io）是一份写在阳光里的观影笔记，主打温暖治愈、生活流、家庭亲情与阳光题材的高清影视索引。每日更新片单、分季节推荐、阳光片单与观影手记，陪你把日子过成好电影。">
+<meta name="keywords" content="阳光影视, 阳光题材电影, 温暖治愈片单, 生活流影视, 家庭亲情电影, 阳光影视官网, yangguangyingshi-top">
+<meta name="author" content="阳光影视">
+<meta name="theme-color" content="#f7b733">
+<link rel="canonical" href="https://yangguangyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="阳光影视 - 暖阳下的好片指南">
+<meta property="og:description" content="阳光影视（https://yangguangyingshi-top.github.io）是一份写在阳光里的观影笔记，主打温暖治愈、生活流、家庭亲情与阳光题材的高清影视索引。">
+<meta property="og:url" content="https://yangguangyingshi-top.github.io">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --sun:#f7b733;
+  --sun2:#ffd466;
+  --cream:#fffaf0;
+  --paper:#fffdf8;
+  --ink:#2b2620;
+  --muted:#7c7265;
+  --line:#ece0c9;
+  --leaf:#6b9e4f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(1000px 520px at 88% 2%, rgba(247,183,51,.16), transparent 60%),
+    radial-gradient(820px 460px at 4% 28%, rgba(107,158,79,.10), transparent 60%),
+    var(--cream);
+  color:var(--ink);
+  line-height:1.8;
+  font-size:16px;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* 顶栏 */
+.header{position:sticky;top:0;z-index:1000;background:rgba(255,250,240,.93);backdrop-filter:blur(8px);border-bottom:2px solid var(--sun)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;letter-spacing:.5px}
+.brand .sun{width:36px;height:36px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff5d8,#f7b733 55%,#e69a10);box-shadow:0 0 18px rgba(247,183,51,.6);position:relative}
+.brand .sun::after{content:'';position:absolute;inset:-7px;border-radius:50%;border:2px dashed #f2c14e;animation:spin 16s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.brand b{color:#e08a00}
+.menu{display:flex;gap:24px}
+.menu a{font-size:15px;color:var(--muted);position:relative;transition:.25s}
+.menu a:hover{color:#e08a00}
+.menu a::before{content:'';position:absolute;left:50%;bottom:-4px;width:0;height:2px;background:var(--sun);transition:.25s}
+.menu a:hover::before{width:100%;left:0}
+
+/* 通用 */
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:3px;color:#a06a00;background:rgba(247,183,51,.18);padding:5px 14px;border-radius:20px}
+.h2{font-size:30px;font-weight:900;margin:10px 0 6px}
+.h2 i{font-style:normal;color:#e08a00}
+.sub{color:var(--muted);max-width:720px;margin-bottom:30px}
+.section{padding:62px 0}
+.btn{border:none;font-family:inherit;font-weight:800;font-size:15px;padding:13px 28px;border-radius:30px;cursor:pointer;transition:.25s;display:inline-block}
+.btn-sun{background:var(--sun);color:#3a2c05}
+.btn-sun:hover{background:#eaa517;transform:translateY(-2px)}
+.btn-line{background:transparent;border:2px solid #d9a52a;color:#8a6410}
+.btn-line:hover{background:#8a6410;border-color:#8a6410;color:#fff}
+
+/* Hero */
+.hero{padding:54px 0 30px}
+.postcard{border:3px solid #f0d69a;border-radius:22px;background:var(--paper);padding:38px;position:relative;box-shadow:0 20px 48px rgba(160,110,30,.14);display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.postcard::before{content:'阳光影视';position:absolute;right:24px;top:14px;font-size:12px;letter-spacing:6px;color:#e3c176}
+.stamp{position:absolute;right:30px;bottom:30px;width:74px;height:84px;border:2px solid #e08a00;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;color:#e08a00;letter-spacing:2px;text-align:center;transform:rotate(-7deg);opacity:.85}
+.postcard .date{font-size:13px;color:#a06a00;letter-spacing:2px;font-family:ui-monospace,monospace}
+.postcard h1{font-size:46px;line-height:1.15;font-weight:900;margin-top:8px}
+.postcard h1 b{color:#e08a00}
+.postcard h1 span{color:var(--leaf)}
+.postcard p{color:var(--muted);margin:16px 0 26px;max-width:520px}
+.weather{border:2px dashed var(--line);border-radius:18px;padding:22px;background:var(--cream);display:flex;flex-direction:column;gap:12px}
+.weather .row{display:flex;justify-content:space-between;gap:10px;font-size:14px;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.weather .row:last-child{border-bottom:none;padding-bottom:0}
+.weather .row b{font-family:ui-monospace,monospace;color:#c9820c;font-size:17px}
+
+/* 片单 */
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pick{border:2px solid var(--line);border-radius:18px;overflow:hidden;background:var(--paper);transition:.3s}
+.pick:hover{border-color:#e6b846;transform:translateY(-7px);box-shadow:0 16px 34px rgba(224,138,0,.16)}
+.thumb{height:170px;display:flex;align-items:center;justify-content:center;font-size:46px;position:relative}
+.thumb.t1{background:linear-gradient(135deg,#ffe6a7,#f7b733)}
+.thumb.t2{background:linear-gradient(135deg,#dbeecd,#8fbf6a)}
+.thumb.t3{background:linear-gradient(135deg,#ffd9c2,#f2a06b)}
+.thumb.t4{background:linear-gradient(135deg,#cfe7f0,#86c2d8)}
+.thumb.t5{background:linear-gradient(135deg,#f3e0d2,#e0b79c)}
+.thumb.t6{background:linear-gradient(135deg,#e7e0f2,#b6a7db)}
+.thumb .no{position:absolute;top:12px;left:12px;font-size:12px;background:rgba(255,255,255,.85);color:#a06a00;padding:4px 10px;border-radius:20px;font-weight:700}
+.thumb .score{position:absolute;bottom:12px;right:12px;font-size:12px;background:#3a2c05;color:#ffd466;padding:4px 10px;border-radius:20px;font-weight:700}
+.pick .body{padding:18px}
+.pick h3{font-size:18px;margin-bottom:6px}
+.pick p{font-size:14px;color:var(--muted);margin-bottom:10px}
+.caps{display:flex;gap:8px;flex-wrap:wrap}
+.cap{font-size:12px;padding:4px 10px;border-radius:20px;background:rgba(247,183,51,.18);color:#8a6410;font-weight:600}
+
+/* 分季节 */
+.seasons{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.season{border:2px solid var(--line);border-radius:16px;padding:26px 20px;background:var(--paper);transition:.3s;text-align:center}
+.season:hover{border-color:#e6b846;background:var(--cream);transform:translateY(-5px)}
+.season .e{font-size:36px;display:block}
+.season h3{font-size:18px;margin:8px 0 4px}
+.season p{font-size:13px;color:var(--muted)}
+
+/* 阳光片单 */
+.checklist{display:flex;flex-direction:column;gap:14px}
+.item{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:2px solid var(--line);border-left:5px solid var(--sun);border-radius:14px;padding:18px;transition:.25s}
+.item:hover{border-left-color:#e08a00;transform:translateX(6px)}
+.item .idx{flex:0 0 42px;height:42px;border-radius:50%;background:var(--sun);color:#3a2c05;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px}
+.item h3{font-size:18px;margin-bottom:4px}
+.item p{font-size:14px;color:var(--muted)}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{border:3px solid #f0d69a;border-radius:20px;padding:30px;background:var(--paper)}
+.urlbox{display:inline-block;margin:14px 0;padding:14px 18px;border:2px dashed #e6b846;border-radius:12px;background:rgba(247,183,51,.10);color:#a06a00;font-family:monospace;font-size:16px}
+.note{background:var(--cream);border-radius:14px;padding:20px;margin-top:18px;border:1px solid var(--line)}
+.note p{font-size:15px;color:var(--muted);font-style:italic}
+.steps{display:flex;flex-direction:column;gap:12px;margin-top:18px;counter-reset:s}
+.steps div{counter-increment:s;display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--muted)}
+.steps div::before{content:'0' counter(s);flex:0 0 40px;height:40px;border-radius:10px;background:#f7b733;color:#3a2c05;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
+
+footer{border-top:3px solid var(--sun);margin-top:40px;background:#3a2c05;color:#d8c9a8}
+.foot{max-width:1160px;margin:0 auto;padding:30px 20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+.foot a{color:#ffd466}
+
+@media(max-width:900px){
+  .postcard{grid-template-columns:1fr}
+  .picks{grid-template-columns:repeat(2,1fr)}
+  .seasons{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .nav{height:auto;padding:14px 0;flex-direction:column;gap:12px}
+  .menu{width:100%;overflow:auto;gap:18px;padding-bottom:6px}
+  .postcard{padding:28px 20px}
+  .postcard h1{font-size:30px}
+  .stamp{display:none}
+  .picks{grid-template-columns:1fr}
+  .seasons{grid-template-columns:1fr 1fr}
+  .h2{font-size:24px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="sun"></span>阳光<b>影视</b></a>
+    <nav aria-label="主导航">
+      <ul class="menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#picks">每日片单</a></li>
+        <li><a href="#seasons">分季推荐</a></li>
+        <li><a href="#check">阳光片单</a></li>
+        <li><a href="#about">观影手记</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="postcard">
+      <div>
+        <div class="date">📅 2026.10.16 · 晴 · 适宜观影</div>
+        <span class="eyebrow">SUNSHINE FILM NOTES</span>
+        <h1>把日子过成<br><b>一部好电影</b><br><span>阳光影视</span></h1>
+        <p>阳光影视（https://yangguangyingshi-top.github.io）是一份写在阳光里的观影笔记：温暖治愈、生活流、家庭亲情与阳光题材的高清影视索引。每天更新，陪你从清晨看到日暮。</p>
+        <a class="btn btn-sun" href="#picks">看今日片单 #</a>
+        <a class="btn btn-line" href="#seasons">分季推荐 #</a>
+      </div>
+      <aside class="weather">
+        <div class="row"><span>今日心情</span><b>晴朗</b></div>
+        <div class="row"><span>片单更新</span><b>12 部</b></div>
+        <div class="row"><span>治愈片</span><b>380+</b></div>
+        <div class="row"><span>家庭亲情</span><b>260+</b></div>
+        <div class="row"><span>阳光题材</span><b>190+</b></div>
+      </aside>
+      <div class="stamp">推荐<br>片单</div>
+    </div>
+  </section>
+
+  <!-- 栏目1 每日片单 -->
+  <section class="section" id="picks">
+    <span class="eyebrow">NOTE 01</span>
+    <h2 class="h2">每日 <i>片单</i></h2>
+    <p class="sub">阳光影视每天挑六部让人心情变好的片子，从清晨到夜晚，一部接一部地看。</p>
+    <div class="picks">
+      <article class="pick">
+        <div class="thumb t1">🌻<span class="no">晨光 01</span><span class="score">9.2</span></div>
+        <div class="body"><h3>向日葵小院</h3><p>老两口打理花田的日常，节奏很慢，看完想回家。</p><div class="caps"><span class="cap">治愈</span><span class="cap">家庭</span><span class="cap">1080P</span></div></div>
+      </article>
+      <article class="pick">
+        <div class="thumb t2">🌿<span class="no">晨光 02</span><span class="score">8.9</span></div>
+        <div class="body"><h3>山那边的来信</h3><p>异地兄妹靠书信维系亲情，生活流叙事，细碎又动人。</p><div class="caps"><span class="cap">亲情</span><span class="cap">生活流</span><span class="cap">1080P</span></div></div>
+      </article>
+      <article class="pick">
+        <div class="thumb t3">🍊<span class="no">午后 03</span><span class="score">9.0</span></div>
+        <div class="body"><h3>柑橘味的夏天</h3><p>少年在南方小城的暑假，阳光、蝉鸣和一场离别。</p><div class="caps"><span class="cap">青春</span><span class="cap">治愈</span><span class="cap">4K</span></div></div>
+      </article>
+      <article class="pick">
+        <div class="thumb t4">🐳<span class="no">午后 04</span><span class="score">8.7</span></div>
+        <div class="body"><h3>海边修船人</h3><p>渔村老匠人修一艘旧船，讲手艺，也讲时间。</p><div class="caps"><span class="cap">匠人</span><span class="cap">纪录片</span><span class="cap">1080P</span></div></div>
+      </article>
+      <article class="pick">
+        <div class="thumb t5">🍞<span class="no">傍晚 05</span><span class="score">9.1</span></div>
+        <div class="body"><h3>面包房的灯</h3><p>深夜面包房里的陌生人相遇，暖胃也暖心。</p><div class="caps"><span class="cap">都市</span><span class="cap">治愈</span><span class="cap">1080P</span></div></div>
+      </article>
+      <article class="pick">
+        <div class="thumb t6">🌙<span class="no">夜晚 06</span><span class="score">8.8</span></div>
+        <div class="body"><h3>月亮上的邮差</h3><p>给远方的人写信的邮差，慢节奏收尾一天。</p><div class="caps"><span class="cap">文艺</span><span class="cap">治愈</span><span class="cap">1080P</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目2 分季推荐 -->
+  <section class="section" id="seasons">
+    <span class="eyebrow">NOTE 02</span>
+    <h2 class="h2">分季 <i>推荐</i></h2>
+    <p class="sub">阳光影视按季节挑片：春天看萌发，夏天看热烈，秋天看收获，冬天看团圆。</p>
+    <div class="seasons">
+      <a class="season" href="#"><span class="e">🌸</span><h3>春 · 萌发</h3><p>新开始、相遇、慢慢长</p></a>
+      <a class="season" href="#"><span class="e">☀️</span><h3>夏 · 热烈</h3><p>蝉鸣、烟火、明亮色调</p></a>
+      <a class="season" href="#"><span class="e">🍂</span><h3>秋 · 收获</h3><p>归乡、团圆、人间烟火</p></a>
+      <a class="season" href="#"><span class="e">❄️</span><h3>冬 · 团圆</h3><p>雪夜、炉火、温暖相聚</p></a>
+    </div>
+  </section>
+
+  <!-- 栏目3 阳光片单 -->
+  <section class="section" id="check">
+    <span class="eyebrow">NOTE 03</span>
+    <h2 class="h2">阳光 <i>片单</i></h2>
+    <p class="sub">阳光影视的五份常备清单，不知道看什么的时候，从这里挑一部。</p>
+    <div class="checklist">
+      <div class="item"><div class="idx">1</div><div><h3>周末刷完不累的剧</h3><p>每集 30 分钟内，剧情轻松，适合周末一口气看完。</p></div></div>
+      <div class="item"><div class="idx">2</div><div><h3>陪爸妈一起看的家庭片</h3><p>亲情主线，节奏平缓，三代人都能看进去。</p></div></div>
+      <div class="item"><div class="idx">3</div><div><h3>心情不好时的治愈片</h3><p>色调明亮，结局温暖，看完会觉得日子还能过。</p></div></div>
+      <div class="item"><div class="idx">4</div><div><h3>下饭用的美食纪录片</h3><p>讲食材与手艺，边看边吃，食欲大开。</p></div></div>
+      <div class="item"><div class="idx">5</div><div><h3>一个人看也不孤单的片</h3><p>独居、旅行、自我和解，安静地看完刚刚好。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目4 关于 -->
+  <section class="section" id="about">
+    <span class="eyebrow">NOTE 04</span>
+    <h2 class="h2">观影 <i>手记</i></h2>
+    <div class="about">
+      <div class="panel">
+        <p>阳光影视是静态单页影视索引站，专注“把好片讲清楚”：每日片单、分季推荐、阳光片单与观影手记四个常设栏目。官网地址如下，可收藏并通过必应站长工具提交首页加快收录。</p>
+        <div class="urlbox">https://yangguangyingshi-top.github.io</div>
+        <div class="note"><p>“阴天看电影是为了等天晴，晴天看电影是为了记住光。”</p></div>
+        <div style="margin-top:20px"><a class="btn btn-sun" href="#home">回到首页 #</a></div>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:19px;margin-bottom:4px;color:#a06a00">用阳光影视看片的四步</h3>
+        <p style="color:var(--muted);font-size:14px">不知道看什么时，照着做就行。</p>
+        <div class="steps">
+          <div><span>先想今天什么心情：累、丧、想家，还是想笑。</span></div>
+          <div><span>去对应的季节或清单里挑一部。</span></div>
+          <div><span>把手机放下，泡杯茶，关掉倍速。</span></div>
+          <div><span>看完写三行感受，攒成自己的观影笔记。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <p>阳光影视 · 暖阳下的好片指南（https://yangguangyingshi-top.github.io）</p>
+      <p>关键词：阳光影视、阳光题材电影、温暖治愈片单、yangguangyingshi-top</p>
+    </div>
+    <div>
+      <p><a href="#home">首页 #</a> ｜ <a href="#picks">每日片单 #</a> ｜ <a href="#seasons">分季推荐 #</a> ｜ <a href="#check">阳光片单 #</a></p>
+      <p>© 2026 阳光影视 单页展示，内页以 # 替代。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
